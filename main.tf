@@ -48,7 +48,7 @@ resource "aws_security_group" "allow_http_ssh_inbound" {
 # Create two EC2 instances and associate them with the security group
 resource "aws_instance" "webserver" {
   count         = 2
-  ami           = "ami-08048b042dd26bddb"  
+  ami           = "ami-08048b042dd26bddb"  # Replace with a valid AMI ID for your region
   instance_type = "t2.micro"
   key_name      = aws_key_pair.generated_key.key_name
   vpc_security_group_ids = [aws_security_group.allow_http_ssh_inbound.id]
