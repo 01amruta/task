@@ -6,10 +6,10 @@ variable "network-security-group-name" {
 
 }
 
-variable "ubuntu-ami" {
+variable "debian-ami" {
 
 }
 
-variable "ubuntu-instance-type" {
+variable "debian-instance-type" {
 
 }
